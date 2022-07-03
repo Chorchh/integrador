@@ -457,8 +457,14 @@ button:hover {
     font-weight: 500;
 }
 
-.submit-msj {
-    text-decoration: none;
-    background-color: var(--contraste);
-    color: var(--black);
+input {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #contactus {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
