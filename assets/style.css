@@ -465,11 +465,40 @@ input, textarea {
     margin-bottom: 20px;
 }
 
-
 @media (max-width: 768px) {
     #contactus {
         display: flex;
         flex-direction: column;
+        gap: 40px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-cuenta, .footer-redes, .footer-legales, .footer-contacto {
+    gap: 20px;
+}
+
+@media (max-width:768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         gap: 40px;
     }
 }
