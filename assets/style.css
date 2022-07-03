@@ -23,6 +23,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 .section-container {
@@ -69,12 +70,7 @@ button:hover {
 }
 
 .section-p {
-    font-size: 12px;
-    font-weight: 300;
-}
-
-.section-p-small {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -110,7 +106,7 @@ button:hover {
     color: var(--black);
 }
 
-.navbar, .navbar-list {
+.navbar-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,4 +258,96 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.about-text p {
+    max-width: max(60%, 600px);
+}
+
+@media (max-width: 768px) {
+    #aboutus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-text {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-p {
+        max-width: 350px;
+    }
+}
+
+/* Products */
+#products {
+    display: flex;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0;
+    width: 95%;
+    max-width: 1300px;
+    gap: 70px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    width: 100%;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 90px;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: 3px solid var(--primario);
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.product-img {
+    height: 170px;
+    width: 170px;
+}
+
+@media (max-width: 768px) {
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
 }
