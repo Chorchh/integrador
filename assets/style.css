@@ -582,3 +582,81 @@ form {
         margin: 0 auto;
     }
 }
+
+/* REGISTER */
+body {
+    background: rgb(79,125,95);
+background: linear-gradient(90deg, rgba(79,125,95,1) 50%, rgba(192,216,200,1) 50%);
+}
+
+hr {
+    width: 100%;
+}
+
+.register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 300px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-input {
+    border-radius: 10px;
+}
+
+.img-register {
+    background-image: url(./img/pexels-cottonbro-4507733-removebg-preview.png);
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .register-img {
+        display: none;
+    }
+
+    .register {
+        background-color: var(--primario);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .register-container {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-img {
+        display: none;
+    }
+
+    .register {
+        background-color: var(--primario);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
