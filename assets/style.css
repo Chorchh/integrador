@@ -254,6 +254,7 @@ button:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin: 0 auto;
     }
 
     .text-container {
