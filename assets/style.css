@@ -470,6 +470,12 @@ button:hover {
         flex-direction: column;
         gap: 50px;
     }
+
+    .product:hover {
+        transform: scale(1.1);
+        transform-style: preserve-3d;
+    }
+    
 }
 
 /* Contactus */
