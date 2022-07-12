@@ -127,6 +127,10 @@ button:hover {
     display: none;
 }
 
+#toggle-user {
+    display: none;
+}
+
 .navbar i {
     font-size: 30px;
     cursor: pointer;
@@ -140,6 +144,28 @@ button:hover {
 
 .user-container {
     display: flex;
+}
+
+#toggle-user:checked + .user {
+    display: flex;
+}
+
+.user {
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    right: 20%;
+    display: none;
+    z-index: 444;
+    /* background-color: var(--secundario); */
+    color: var(--black);
+    gap: 10px;
+}
+
+.user a {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 22px;
 }
 
 @media (max-width: 992px){
